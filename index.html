@@ -1,0 +1,209 @@
+<!-- 
+  Copyright 2023 Pardn Ltd 帕登國際有限公司.
+  Created by Pardn Chiu 邱敬幃.
+  Email: chiuchingwei@icloud.com
+ -->
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="mobile-web-app-capable" content="no">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index follow">
+        <!--  -->
+        <title>My Portfolio Page | 邱敬幃 Pardn Chiu | GitHub.io</title>
+        <meta name="title" content="My Portfolio Page | 邱敬幃 Pardn Chiu | GitHub.io">
+        <meta name="description" content="我的作品頁面實作範例 | 帕登數位科技有限公司">
+        <!-- -->
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardnchiu.github.io/my-portfolio-page/">
+        <meta name="referrer" content="unsafe-url">
+        <meta name="copyright" content="© 2023 帕登數位科技有限公司 Pardn Ltd">
+        <!-- Facebook -->
+        <meta property="og:title" content="My Portfolio Page | 邱敬幃 Pardn Chiu | GitHub.io">
+        <meta property="og:description" content="我的作品頁面實作範例 | 帕登數位科技有限公司">
+        <meta property="og:image" content="https://pardn.io/image/repo/my-portfolio-page.jpg">
+        <meta property="og:url" content="https://pardnchiu.github.io/my-portfolio-page/">
+        <meta property="og:site_name" content="Pardn Chiu 的 Github Page">
+        <meta property="og:type" content="website">
+        <!-- Twitter -->
+        <meta property="twitter:title" content="my-portfolio-page | 邱敬幃 Pardn Chiu | GitHub.io">
+        <meta property="twitter:description" content="我的作品頁面實作範例 | 帕登數位科技有限公司">
+        <meta property="twitter:image" content="https://pardnchiu.github.io//image/repo/my-portfolio-page.jpg">
+        <meta property="twitter:url" content="https://pardnchiu.github.io/my-portfolio-page/">
+        <!-- Google -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+        <link rel="stylesheet" href="css/index.css">
+        <!--  -->
+        <script src="https://pardnchiu.github.io/js/repo.js"></script>
+        <script src="https://pardnchiu.github.io/PDExtension-js/PDExtension.min.js" copyright="Pardn Ltd"></script>
+        <script src="js/index.min.js" defer></script>
+    </head>
+
+    <body>
+        <style>
+            * {
+                /*  */
+                --global-bg-col: unset;
+                --global-bg: url("../image/bg.jpg");
+                --global-col-h: #252d3c;
+                --global-col-p: #5d5d6c;
+                --global-radius: 1rem;
+
+                /* 頭像 */
+                --user-top-head-bg-col: #f3fafe;
+                --user-top-head-border-bg-col: unset;
+                --user-top-head-border-bg: linear-gradient(to right bottom, steelblue, purple, red);
+
+                /* 名稱 */
+                --user-top-name-size: 1.75rem;
+                --user-top-title-size: 1rem;
+
+                /* 社交軟體 */
+                --user-top-link-size: 1.5rem;
+
+                /* 經歷 */
+                --user-top-exp-h-size: 1.25rem;
+                --user-top-exp-p-size: 1rem;
+
+                /* 主按鈕 */
+                --user-top-button-bg-col: unset;
+                --user-top-button-bg: linear-gradient(to right bottom, steelblue, purple, red);
+                --user-top-button-p-col: #fff;
+
+                /* 聯絡方式 */
+                --user-top-contact-bg-col: rgba(0, 0, 0, 0.05);
+                --user-top-contact-size: 1.25rem;
+
+                /* 選單 */
+                --user-top-tab-bg-col: rgba(0, 0, 0, 0.05);
+                --user-top-tab-sel-col: #fff;
+                --user-top-tab-p-col: #445A6D;
+                --user-top-tab-p-sel-col: #445A6D;
+
+                /* 作品 */
+                --portfolio-gap: 2rem;
+                --portfolio-ratio: 1 / 1;
+                --portfolio-tab-bg-col: rgba(0, 0, 0, 0.5);
+                --portfolio-tab-bg-sel-col: #fff;
+                --portfolio-tab-p-col: #fff;
+                --portfolio-tab-p-sel-col: #445A6D;
+
+                /* 技能 */
+                --skill-gap: 2rem;
+                --skill-block-bg-col: rgba(0, 0, 0, 0.05);
+                --skill-block-h-color: #000;
+                --skill-block-h-size: 1.25rem;
+                --skill-item-bg-col: #f0f0f0;
+                --skill-item-circle-bg-col: #ddd;
+                --skill-item-circle-val-col: unset;
+                --skill-item-circle-val-bg: linear-gradient(to right, red, purple);
+                --skill-item-h-col: #000;
+                --skill-item-p-col: #666;
+            }
+        </style>
+        <script>
+            var webConfig = {
+                user: {
+                    head: "https://pardn.io/image/head-s.jpg",
+                    name: "邱敬幃",
+                    title: "帕登數位科技負責人",
+                    link: {
+                        linkedin: "https://www.linkedin.com/in/pardnchiu",
+                        instagram: "https://instagram.com/pardnio",
+                        facebook: "https://www.facebook.com/chiuchingwei",
+                        github: "https://github.com/pardnchiu",
+                        twitter: null,
+                        behance: null,
+                        blog: "https://pardn.io/blog"
+                    },
+                    exp: [
+                        {
+                            num: (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            content: "全端開發"
+                        },
+                        {
+                            num: "4個",
+                            content: "iOS APP 製作"
+                        },
+                        {
+                            num: "+40個",
+                            content: "網站製作"
+                        }
+                    ],
+                    button: {
+                        text: "查看原碼",
+                        icon: "fa-solid fa-code",
+                        href: "https://github.com/pardnchiu/my-portfolio-page"
+                    },
+                    contact: {
+                        phone: null,
+                        email: "chiuchingwei@icloud.com",
+                        fbmessager: "https://m.me/chiuchingwei",
+                        whatsapp: null,
+                        line: null,
+                        telegram: null
+                    },
+                    skill: {
+                        iOS: {
+                            Swift: (new Date("2016/12/01").$timestamp).$gone.replace(/年前/, "")
+                        },
+                        Frontend: {
+                            Html: (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            Css: (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            JavaScript: (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            Sass: (new Date("2019/06/01").$timestamp).$gone.replace(/年前/, "")
+                        },
+                        Backend: {
+                            "Node.js": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            "TypeScript": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            "Express": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            "Pug / Ejs": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            "Nginx": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            php: (new Date("2020/04/01").$timestamp).$gone.replace(/年前/, ""),
+                            python: (new Date("2021/06/01").$timestamp).$gone.replace(/年前/, "")
+                        },
+                        Database: {
+                            "MySQL / MariaDB": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            "Redis": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                            "Elasticsearch": (new Date("2019/06/01").$timestamp).$gone.replace(/年前/, ""),
+                            "MongoDB": (new Date("2019/06/01").$timestamp).$gone.replace(/年前/, ""),
+                        },
+                        "Google Cloud Platform": {
+                            "Firebase / Firestore": (new Date("2016/12/01").$timestamp).$gone.replace(/年前/, ""),
+                            "Cloud Functions": (new Date("2016/12/01").$timestamp).$gone.replace(/年前/, ""),
+                            "App Engine": (new Date("2016/12/01").$timestamp).$gone.replace(/年前/, ""),
+                            "Compute Engine": (new Date("2017/09/01").$timestamp).$gone.replace(/年前/, ""),
+                        },
+                        OS: {
+                            "RedHat / CentOS / RockyLinux": (new Date("2019/06/01").$timestamp).$gone.replace(/年前/, ""),
+                            "Debian": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
+                        },
+                        more: {
+                            Git: (new Date("2017/01/01").$timestamp).$gone.replace(/年前/, ""),
+                            Docker: (new Date("2019/12/01").$timestamp).$gone.replace(/年前/, ""),
+                            Postman: (new Date("2019/12/01").$timestamp).$gone.replace(/年前/, ""),
+                            Figma: (new Date("2019/12/01").$timestamp).$gone.replace(/年前/, ""),
+                        }
+                    }
+                },
+                portfolio: repo
+            };
+        </script>
+    </body>
+
+</html>
