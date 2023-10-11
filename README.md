@@ -32,7 +32,7 @@
 <br>
 <br>
 
-<a href=https://github.com/pardnchiu/website-template-16>
+<a href=https://github.com/pardnchiu/personal-portfolio-page>
   <img align=left src=https://pardn.io/image/left.svg height=32>
 </a>
 
