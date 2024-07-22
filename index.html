@@ -1,7 +1,9 @@
 <!-- 
+
   Copyright 2023 Pardn Ltd 帕登國際有限公司.
   Created by Pardn Chiu 邱敬幃.
   Email: chiuchingwei@icloud.com
+  
  -->
 <!DOCTYPE html>
 <html lang="zh-Hans-TW">
@@ -51,7 +53,7 @@
         <link rel="stylesheet" href="css/index.css">
         <!--  -->
         <script src="https://pardnchiu.github.io/js/repo.js"></script>
-        <script src="https://pardnchiu.github.io/PDExtension-js/PDExtension.min.js" copyright="Pardn Ltd"></script>
+        <script src="https://cdn.jsdelivr.net/gh/pardnchiu/PDExtension-js@latest/js/PDExtension.min.js" copyright="Pardn Ltd" defer></script>
         <script src="js/index.min.js" defer></script>
     </head>
 
@@ -117,94 +119,6 @@
                 --skill-item-p-col: #666;
             }
         </style>
-        <script>
-            var webConfig = {
-                user: {
-                    head: "https://pardn.io/image/head-s.jpg",
-                    name: "邱敬幃",
-                    title: "帕登數位科技負責人",
-                    link: {
-                        linkedin: "https://www.linkedin.com/in/pardnchiu",
-                        instagram: "https://instagram.com/pardnio",
-                        facebook: "https://www.facebook.com/chiuchingwei",
-                        github: "https://github.com/pardnchiu",
-                        twitter: null,
-                        behance: null,
-                        blog: "https://pardn.io/blog"
-                    },
-                    exp: [
-                        {
-                            num: (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            content: "全端開發"
-                        },
-                        {
-                            num: "4個",
-                            content: "iOS APP 製作"
-                        },
-                        {
-                            num: "+40個",
-                            content: "網站製作"
-                        }
-                    ],
-                    button: {
-                        text: "查看原碼",
-                        icon: "fa-solid fa-code",
-                        href: "https://github.com/pardnchiu/my-portfolio-page"
-                    },
-                    contact: {
-                        phone: null,
-                        email: "chiuchingwei@icloud.com",
-                        fbmessager: "https://m.me/chiuchingwei",
-                        whatsapp: null,
-                        line: null,
-                        telegram: null
-                    },
-                    skill: {
-                        iOS: {
-                            Swift: (new Date("2016/12/01").$timestamp).$gone.replace(/年前/, "")
-                        },
-                        Frontend: {
-                            Html: (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            Css: (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            JavaScript: (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            Sass: (new Date("2019/06/01").$timestamp).$gone.replace(/年前/, "")
-                        },
-                        Backend: {
-                            "Node.js": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            "TypeScript": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            "Express": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            "Pug / Ejs": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            "Nginx": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            php: (new Date("2020/04/01").$timestamp).$gone.replace(/年前/, ""),
-                            python: (new Date("2021/06/01").$timestamp).$gone.replace(/年前/, "")
-                        },
-                        Database: {
-                            "MySQL / MariaDB": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            "Redis": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                            "Elasticsearch": (new Date("2019/06/01").$timestamp).$gone.replace(/年前/, ""),
-                            "MongoDB": (new Date("2019/06/01").$timestamp).$gone.replace(/年前/, ""),
-                        },
-                        "Google Cloud Platform": {
-                            "Firebase / Firestore": (new Date("2016/12/01").$timestamp).$gone.replace(/年前/, ""),
-                            "Cloud Functions": (new Date("2016/12/01").$timestamp).$gone.replace(/年前/, ""),
-                            "App Engine": (new Date("2016/12/01").$timestamp).$gone.replace(/年前/, ""),
-                            "Compute Engine": (new Date("2017/09/01").$timestamp).$gone.replace(/年前/, ""),
-                        },
-                        OS: {
-                            "RedHat / CentOS / RockyLinux": (new Date("2019/06/01").$timestamp).$gone.replace(/年前/, ""),
-                            "Debian": (new Date("2018/10/01").$timestamp).$gone.replace(/年前/, ""),
-                        },
-                        more: {
-                            Git: (new Date("2017/01/01").$timestamp).$gone.replace(/年前/, ""),
-                            Docker: (new Date("2019/12/01").$timestamp).$gone.replace(/年前/, ""),
-                            Postman: (new Date("2019/12/01").$timestamp).$gone.replace(/年前/, ""),
-                            Figma: (new Date("2019/12/01").$timestamp).$gone.replace(/年前/, ""),
-                        }
-                    }
-                },
-                portfolio: repo
-            };
-        </script>
     </body>
 
 </html>
